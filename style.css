@@ -1,54 +1,51 @@
 body {
   margin: 0;
-  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   height: 100vh;
-  justify-content: center;
-  background: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=913&q=80");
-  background-size: cover;
-  overflow: hidden;
-}
-h2 {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 14px;
-  text-align: center;
-  color: white;
-}
-.clock {
-  display: flex;
-}
-.clock div {
-  margin: 5px;
-  position: relative;
-}
-.clock span {
-  width: 100px;
-  height: 80px;
-  background: slateblue;
-  opacity: 0.8;
-  color: white;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 50px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: yellow;
+  font-family: cursive;
 }
-.clock .text {
-  height: 30px;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background: darkblue;
-  opacity: 0.8;
+.form {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
-.clock #ampm {
-  bottom: 0;
-  position: absolute;
-  width: 60px;
-  height: 30px;
+.input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  border: solid 4px green;
+  color: green;
+}
+.input::placeholder {
+  color: lightgrey;
+  font-family: cursive;
+}
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
   font-size: 20px;
-  background: green;
+  font-family: cursive;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(0.9);
+}
+.score {
+  color: green;
+  text-align: right;
 }
